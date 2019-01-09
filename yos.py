@@ -45,15 +45,13 @@ emojis = {" " : [":sonicrun1:", ":sonicrun2:", ":sonicrun3:", ":sonicrun4:", ":s
 def process(s):
 	solutions = []
 	def process(accumulated, remaining):
-		#print "accumulated:" + str(accumulated)
-		#print "remaining:" + str(remaining)
 		if len(remaining) == 0:
 			solutions.append(accumulated)
 			return
 
 		def symbolicate(letters):
 			if remaining.startswith(letters):
-				return process(accumulated + [choice(emojis[letters])], remaining[len(letters):])
+				process(accumulated + [choice(emojis[letters])], remaining[len(letters):])
 
 		for emoji in emojis.keys():
 			symbolicate(emoji)
