@@ -22,6 +22,7 @@ emojis = {" " : [":sonicrun1:", ":sonicrun2:", ":sonicrun3:", ":sonicrun4:", ":s
 "J" : [":jalopnik:"],
 "KC" : [":royals:"],
 "L" : [":aslol:"],
+"LA" : [":mlb-lad:"],
 "M" : [":graph:", ":motorola:", ":tori:"],
 "N" : [":butt:", ":n:"],
 "NY" : [":giants:"],
@@ -47,7 +48,7 @@ def process(s):
 		#print "accumulated:" + str(accumulated)
 		#print "remaining:" + str(remaining)
 		if len(remaining) == 0:
-			solutions.append(" ".join(accumulated))
+			solutions.append(accumulated)
 			return
 
 		def symbolicate(letters):
@@ -60,7 +61,7 @@ def process(s):
 	process([], s.upper())
 
 	shortest = min([len(x) for x in solutions])
-	solutions = [x for x in solutions if len(x) == shortest]
+	solutions = [" ".join(x) for x in solutions if len(x) == shortest]
 	if len(solutions) > 0:
 		return choice(solutions)
 
