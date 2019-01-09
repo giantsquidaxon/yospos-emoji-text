@@ -20,6 +20,7 @@ emojis = {" " : [":sonicrun1:", ":sonicrun2:", ":sonicrun3:", ":sonicrun4:", ":s
 "HUT" : [":hut:"],
 "I" : [":bolt:", ":guillotine:", ":middle_finger:"],
 "J" : [":jalopnik:"],
+"K" : [":kde-bw:"],
 "KC" : [":royals:"],
 "L" : [":aslol:"],
 "LA" : [":mlb-lad:"],
@@ -40,7 +41,8 @@ emojis = {" " : [":sonicrun1:", ":sonicrun2:", ":sonicrun3:", ":sonicrun4:", ":s
 "V" : [":bong:"],
 "W" : [":kenwood:", ":wutang:"],
 "X" : [":x:"],
-"Y" : [":louise:", ":y:"]}
+"Y" : [":louise:", ":y:"],
+"Z" : [":zilog:"]}
 
 def process(s):
 	solutions = []
