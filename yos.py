@@ -3,7 +3,7 @@ from random import choice
 emojis = {" " : [":sonicrun1:", ":sonicrun2:", ":sonicrun3:", ":sonicrun4:", ":sonicrun5:", ":sonicrun6:", ":sonicrun7:", ":sonicrun8:"],
 "A" : [":afc:", ":afx:", ":a:"],
 "AC" : [":ac:"],
-"B" : [":nhl-bos:"],
+"B" : [":nhl-bos:", ":mlb-bos:"],
 "C" : [":cuecat:", ":cubs:", ":bears:", ":nhl-cgy:", ":numbermuncher:"],
 "CR" : [":rockies:"],
 "D" : [":broncosd:"],
