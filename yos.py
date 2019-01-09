@@ -28,7 +28,7 @@ emojis = {" " : [":sonicrun1:", ":sonicrun2:", ":sonicrun3:", ":sonicrun4:", ":s
 "N" : [":butt:", ":n:"],
 "NY" : [":giants:"],
 "O" : [":0:", ":amiga:", ":awesome:", ":bloomin:", ":nhl-wpg:"],
-"OO" : [":lemniscate:"],
+"OO" : [":lemniscate:", ":eyes:"],
 "OWO" : [":owo:"],
 "P" : [":p:", ":pinterest:"],
 "Q" : [":quicktime:"],
