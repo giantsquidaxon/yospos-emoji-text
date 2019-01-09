@@ -23,7 +23,7 @@ emojis = {" " : [":sonicrun1:", ":sonicrun2:", ":sonicrun3:", ":sonicrun4:", ":s
 "KC" : [":royals:"],
 "L" : [":aslol:"],
 "M" : [":graph:", ":motorola:", ":tori:"],
-"N" : [":butt:", ":n"],
+"N" : [":butt:", ":n:"],
 "NY" : [":giants:"],
 "O" : [":0:", ":amiga:", ":awesome:", ":bloomin:", ":nhl-wpg:"],
 "OO" : [":lemniscate:"],
