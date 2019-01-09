@@ -19,6 +19,7 @@ emojis = {" " : [":sonicrun1:", ":sonicrun2:", ":sonicrun3:", ":sonicrun4:", ":s
 "HP" : [":hpsauce:"],
 "HUT" : [":hut:"],
 "I" : [":bolt:", ":guillotine:", ":middle_finger:"],
+"J" : [":jalopnik:"],
 "KC" : [":royals:"],
 "L" : [":aslol:"],
 "M" : [":graph:", ":motorola:", ":tori:"],
