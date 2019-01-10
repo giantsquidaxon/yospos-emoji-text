@@ -37,7 +37,7 @@ emojis = {" " : [":sonicrun1:", ":sonicrun2:", ":sonicrun3:", ":sonicrun4:", ":s
 "REAL" : [":realplayer:", ":real:"],
 "S" : [":s:"],
 "SN" : [":gettin:"],
-"T" : [":test3:", ":shroom:", ":timbers:", ":tronc:", ":ripperonis:", ":titans:"],
+"T" : [":test3:", ":shroom:", ":timbers:", ":tronc:", ":rippepperonis:", ":titans:"],
 "U" : [":u:", ":colts:", ":hanukkah:"],
 "UK" : [":cayuts:"],
 "V" : [":bong:"],
