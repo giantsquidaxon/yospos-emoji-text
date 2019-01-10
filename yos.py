@@ -1,6 +1,7 @@
-import sys
+import sys, getopt
 from random import choice
-emojis = {" " : [":sonicrun1:", ":sonicrun2:", ":sonicrun3:", ":sonicrun4:", ":sonicrun5:", ":sonicrun6:", ":sonicrun7:", ":sonicrun8:"],
+sanics = [":sonicrun1:", ":sonicrun2:", ":sonicrun3:", ":sonicrun4:", ":sonicrun5:", ":sonicrun6:", ":sonicrun7:", ":sonicrun8:"]
+emojis = {" " : ["**SPACE**"],
 "A" : [":afc:", ":afx:", ":a:"],
 "AC" : [":ac:"],
 "AT" : [":aplus:"],
@@ -63,8 +64,25 @@ def process(s):
 	process([], s.upper())
 
 	shortest = min([len(x) for x in solutions])
-	solutions = [" ".join(x) for x in solutions if len(x) == shortest]
+	solutions = [x for x in solutions if len(x) == shortest]
 	if len(solutions) > 0:
 		return choice(solutions)
 
-print process(sys.argv[1])
+def main(argv):
+	sanic = False
+	options, remainder = getopt.gnu_getopt(sys.argv[1:],"",["gofast"])
+	for opt, arg in options:
+		if opt == "--gofast":
+			sanic = True
+	text = " ".join(remainder)
+	emojis = process(text)
+	if sanic:
+		for i in range(0,len(emojis)):
+			if emojis[i]=="**SPACE**":
+				emojis[i] = sanics[i % len(sanics)]
+	else:
+		emojis = [":nbsp:" if x=="**SPACE**" else x for x in emojis]
+	print "".join(emojis)
+
+if __name__ == '__main__':
+    main(sys.argv[1:])
